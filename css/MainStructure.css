@@ -4,10 +4,10 @@ button {
 }
 
 body {
-  background-color: white;
+  background-color: black;
   background-image: url(../image/nightSky.jpg);
   background-size: cover;
-  background-repeat: repeat-y;
+  background-repeat: no-repeat;
 }
 #board {
   position: relative;
