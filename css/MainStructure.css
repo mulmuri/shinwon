@@ -4,6 +4,7 @@ button {
 }
 
 body {
+  display: block;
   background-color: black;
   background-image: url(../image/nightSky.jpg);
   background-size: cover;
