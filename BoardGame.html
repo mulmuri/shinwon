@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title> 보드게임 </title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/SubStructure.css">
+  <link rel="stylesheet" href="css/MainStructure.css">
+  <link rel="stylesheet" href="css/SetColor.css">
+
+  <script src="js/UserInterface.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/RollDice.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/MoveHorse.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/MinerEffect.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+  <div id="board">
+    <div class="bSideNo5" id="No19" data-dir="R" data-mula="1.5" data-mulb="2" onclick="controlD = 19"></div>
+    <div class="bSideNo4" id="No18" data-dir="R" data-mula="1" data-mulb="1" onclick="controlD = 18"></div>
+    <div class="bSideNo3" id="No17" data-dir="R" data-mula="1" data-mulb="1" onclick="controlD = 17"></div>
+    <div class="bSideNo2" id="No16" data-dir="R" data-mula="1" data-mulb="1" onclick="controlD = 16"></div>
+    <div class="bSideNo1" id="No15" data-dir="R" data-mula="1" data-mulb="1" onclick="controlD = 15"></div>
+    <div class="blEdge" id="No14" data-dir="R" data-mula="2" data-mulb="1.5" onclick="controlD = 14"></div>
+    <div class="lSideNo3" id="No13" data-dir="B" data-mula="1.5" data-mulb="2" onclick="controlD = 13"></div>
+    <div class="lSideNo2" id="No12" data-dir="B" data-mula="1" data-mulb="1" onclick="controlD = 12"></div>
+    <div class="lSideNo1" id="No11" data-dir="B" data-mula="1" data-mulb="1" onclick="controlD = 11"></div>
+    <div class="tlEdge" id="No10" data-dir="B" data-mula="2" data-mulb="1.5" onclick="controlD = 10"></div>
+    <div class="tSideNo1" id="No9" data-dir="L" data-mula="2" data-mulb="1.5" onclick="controlD = 9"></div>
+    <div class="tSideNo2" id="No8" data-dir="L" data-mula="1" data-mulb="1" onclick="controlD = 8"></div>
+    <div class="tSideNo3" id="No7" data-dir="L" data-mula="1" data-mulb="1" onclick="controlD = 7"></div>
+    <div class="tSideNo4" id="No6" data-dir="L" data-mula="1" data-mulb="1" onclick="controlD = 6"></div>
+    <div class="tSideNo5" id="No5" data-dir="L" data-mula="1" data-mulb="1" onclick="controlD = 5"></div>
+    <div class="trEdge" id="No4" data-dir="L" data-mula="1.5" data-mulb="2" onclick="controlD = 4"></div>
+    <div class="rSideNo1" id="No3" data-dir="T" data-mula="2" data-mulb="1.5" onclick="controlD = 3"></div>
+    <div class="rSideNo2" id="No2" data-dir="T" data-mula="1" data-mulb="1" onclick="controlD = 2"></div>
+    <div class="rSideNo3" id="No1" data-dir="T" data-mula="1" data-mulb="1" onclick="controlD = 1"></div>
+    <div class="brEdge" id="No0" data-dir="T" data-mula="1.5" data-mulb="2" onclick="controlD = 0">
+      <div id="horseA" draggable="true" ondragstart="drag(event)" onclick="orderSelect('A');"></div>
+      <div id="horseB" draggable="true" ondragstart="drag(event)" onclick="orderSelect('B');"></div>
+    </div>
+    <div class="scoreBoardA">
+      <button id="upScoreA" onclick="giveScore('A','up')">&#9650;</button>
+      <div id="scoreA"> 0 </div>
+      <button id="downScoreA" onclick="giveScore('A','down')">&#9660;</button>
+    </div>
+    <div class="scoreBoardB">
+      <button id="upScoreB" onclick="giveScore('B','up')">&#9650;</button>
+      <div id="scoreB"> 0 </div>
+      <button id="downScoreB" onclick="giveScore('B','down')">&#9660;</button>
+    </div>
+    <div id="diceTable" onmouseover="dicein()" onmouseout="diceout()" onclick="throwTheDice()"></div>
+    <div class="hasMissionCleared">
+      <button id="success" onclick="success()"> 성공 </button>
+      <button id="failed" onclick="failed()"> 실패 </button>
+    </div>
+    <img id="easyA" src="image/sun.jpg" alt="sun" onclick="stateA = 'easy'">
+    <img id="hardA" src="image/saturn.gif" alt="saturn" onclick="stateA = 'hard'">
+    <img id="easyB" src="image/neptune.gif" alt="neptune" onclick="stateB = 'easy'">
+    <img id="hardB" src="image/moon.png" alt="moon" onclick="stateB = 'hard'">
+    <img id="controlD" src="image/venus.gif" alt="venus" onclick="controlD = false">
+  </div>
+  <script src="js/Run.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

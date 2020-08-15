@@ -1,0 +1,71 @@
+#horseA, #scoreA, #startA, #upScoreA, #downScoreA, #success {background-color: #00bfff; color: pink; opacity: 0.7}
+#horseB, #scoreB, #startB, #upScoreB, #downScoreB, #failed {background-color: white; color: black; opacity: 0.7}
+
+#No3, #No9, #No16 {background-color: #ff4500}
+#No6, #No8, #No12, #No17, #No1 {background-color: gold}
+#No2, #No5, #No7, #No11, #No13, #No15, #No18 {background-color: cornflowerblue}
+#No19 {
+  background: silver no-repeat url("../image/boom.jpg");
+  background-size: 130px 130px;
+  background-position: -10px 10px;
+}
+#No0, #No4, #No10, #No14 {
+  background-size: 200px 200px;
+  background-repeat: no-repeat;
+  background-color: white;
+}
+#No0 {
+  background-image: url("../image/start.png");
+  background-size: 160px 200px;
+  background-position: 30px 10px;
+}
+#No4 {
+  background-image: url("../image/goldenKey.png");
+  background-size: 200px 133px;
+  background-position: 0px 40px;
+}
+#No10 {
+  background-image: url("../image/dual.png");
+  background-position: -10px 0px;
+}
+#No14 {
+  background-image: url("../image/island.png");
+  background-size: 180px 180px;
+  background-position: 10px 10px;
+}
+
+#board > img {
+  position: absolute;
+  color: gold;
+}
+#easyA {
+  width: 900px;
+  height: 800px;
+  left: -700px;
+  top: -500px;
+}
+#hardA {
+  left: -300px;
+  top: 400px;
+  width: 400px;
+  height: 200px;
+  transform: rotate(-120deg);
+}
+#easyB {
+  top: 0px;
+  right: -300px;
+  width: 200px;
+  height: 200px;
+}
+#hardB {
+  right: -300px;
+  top: 400px;
+  width: 150px;
+  height: 150px;
+}
+#controlD {
+  right: -80px;
+  top: 200px;
+  width: 113px;
+  height: 100px;
+}

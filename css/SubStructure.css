@@ -1,0 +1,67 @@
+#horseA, #horseB {
+  position: absolute;
+  border: 2px black solid;
+  width: 70px;
+  height: 70px;
+  border-radius: 35px;
+  z-index: 10;
+  opacity: 1 !important;
+}
+
+.scoreBoardA, .scoreBoardB {
+  top: 270px;
+  border: none !important;
+  height: 170px;
+}
+.scoreBoardA {left: 180px;}
+.scoreBoardB {right: 180px;}
+.scoreBoardA > *, .scoreBoardB > * {
+  font-weight: bold;
+  font-size: 35px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+#scoreA, #scoreB {
+  width: 100px;
+  border-top: 2px grey solid;
+  border-left: 2px grey solid;
+  border-bottom: 2px black solid;
+  border-right: 2px black solid;
+}
+
+.hasMissionCleared {
+  top: 160px;
+  left: 330px;
+  width: 252px;
+  border: none !important;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+.hasMissionCleared > * {
+  height: 50px;
+  width: 100px;
+  font-weight: bold;
+  font-size: 35px;
+  text-align: center;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+#diceTable {
+  left: 306px;
+  top: 214px;
+  height: 300px;
+  width: 300px;
+  border-radius: 1000px;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-image: url("../image/marble.png");
+  background-size: 346px 346px;
+  background-position: -23px -34px;
+  border-color: black !important;
+}

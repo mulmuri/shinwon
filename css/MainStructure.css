@@ -1,0 +1,99 @@
+button {
+  outline: none;
+  cursor: pointer;
+}
+
+body {
+  background-color: white;
+  background-image: url(../image/nightSky.jpg);
+  background-size: 100%;
+  background-repeat: repeat-y;
+}
+#board {
+  position: relative;
+  z-index: 0;
+  margin: 0 auto;
+  margin-top: 80px;
+  width: 912px;
+  height: 708px;
+  border: 2px gray solid;
+  border-radius: 50px;
+  background-repeat: no-repeat;
+  background-color: white;
+  background-image: url('../image/nightSky.jpg');
+  background-size: 912px 708px;
+}
+#board > div {
+  position: absolute;
+  border: 2px gray solid;
+  z-index: 1;
+}
+
+.tlEdge, .trEdge, .blEdge, .brEdge {
+  width: 200px;
+  height: 200px;
+}
+.tlEdge {
+  left: -2px;
+  top: -2px;
+  border-bottom-right-radius: 50px;
+  border-top-left-radius: 50px;
+}
+.trEdge {
+  right: -2px;
+  top: -2px;
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+.blEdge {
+  left: -2px;
+  bottom: -2px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+.brEdge {
+  right: -2px;
+  bottom: -2px;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.lSideNo1, .lSideNo2, .lSideNo3 {
+  width: 150px;
+  height: 100px;
+  left: -2px;
+}
+.lSideNo1 {top: 200px;}
+.lSideNo2 {top: 302px;}
+.lSideNo3 {top: 404px;}
+
+.rSideNo1, .rSideNo2, .rSideNo3 {
+  width: 150px;
+  height: 100px;
+  right: -2px;
+}
+.rSideNo1 {top: 200px;}
+.rSideNo2 {top: 302px;}
+.rSideNo3 {top: 404px;}
+
+.tSideNo1, .tSideNo2, .tSideNo3, .tSideNo4, .tSideNo5 {
+  width: 100px;
+  height: 150px;
+  top: -2px;
+}
+.tSideNo1 {left: 200px;}
+.tSideNo2 {left: 302px;}
+.tSideNo3 {left: 404px;}
+.tSideNo4 {left: 506px;}
+.tSideNo5 {left: 608px;}
+
+.bSideNo1, .bSideNo2, .bSideNo3, .bSideNo4, .bSideNo5 {
+  width: 100px;
+  height: 150px;
+  bottom: -2px;
+}
+.bSideNo1 {left: 200px;}
+.bSideNo2 {left: 302px;}
+.bSideNo3 {left: 404px;}
+.bSideNo4 {left: 506px;}
+.bSideNo5 {left: 608px;}
